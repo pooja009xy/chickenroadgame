@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chicken Road - Official Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 64px;
+      color: #FFD700;
+    }
+
+    header p {
+      font-size: 24px;
+      color: #ddd;
+    }
+
+    .countdown {
+      text-align: center;
+      font-size: 80px;
+      color: #FF3C38;
+      animation: pulse 1s infinite;
+      margin: 20px 0;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    .telegram-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #0088cc;
+      color: white;
+      border-radius: 50px;
+      font-size: 20px;
+      text-decoration: none;
+      margin: 20px auto;
+    }
+
+    .telegram-btn img {
+      width: 28px;
+      height: 28px;
+      margin-right: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 36px;
+      color: #00FFCC;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      font-size: 18px;
+      color: #eee;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #aaa;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header style="text-align: center; margin-bottom: 30px;">
+  <img src="chikenroad.png.jpeg" alt="Gold Hunter Logo" style="height: 100px; border-radius: 10px;">
+  <h1 style="font-size: 2.5rem; margin-top: 10px;">ROOBET CHICKEN ROAD</h1>
+  <p style="font-size: 1.2rem;">India's Most Thrilling Chicken Road Game</p>
+</header>
+
+
+  <div class="countdown" id="countdown">10</div>
+
+  <div style="text-align: center;">
+    <a href="https://t.me/YourTelegramChannel" class="telegram-btn" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+      Join Us on Telegram
+    </a>
+  </div>
+
+  <section>
+    <h2> Secure Deposits</h2>
+    <p>
+      Deposit in seconds using UPI, Paytm, or bank transfer. Every deposit is safe, instant, and credited directly into your Chicken Road wallet. No delays, no hassle — only smooth gaming ahead!
+    </p>
+  </section>
+
+  <section>
+    <h2> Instant Withdrawals</h2>
+    <p>
+      Withdrawing your winnings is as simple as a tap. Get your rewards instantly in your bank or wallet. We believe in fast payouts because your time is as valuable as your skills.
+    </p>
+  </section>
+
+  <section>
+    <h2> What is Chicken Road?</h2>
+    <p>
+      Chicken Road is not just a game — it's a test of your reflexes, strategy, and courage. Navigate a crazy road full of surprises, dodge traffic, and reach the finish line to earn big rewards. Join thousands already playing the hottest game of the year!
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Chicken Road Pvt. Ltd. All Rights Reserved.
+  </footer>
+
+  <script>
+    let count = 10;
+    const countdownEl = document.getElementById("countdown");
+
+    const timer = setInterval(() => {
+      count--;
+      if (count <= 0) {
+        clearInterval(timer);
+        countdownEl.textContent = "GO!";
+        countdownEl.style.color = "#00FF00";
+      } else {
+        countdownEl.textContent = count;
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
